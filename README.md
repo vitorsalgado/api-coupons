@@ -1,2 +1,2 @@
-# api-coupons
-Coupons API
+# Coupons API
+Coupons API for Code Challenge
