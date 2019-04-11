@@ -1,5 +1,5 @@
 {
-  "name": "coupons",
+  "name": "api-coupons",
   "version": "1.0.0",
   "description": "Coupons API for Code Challenge",
   "main": "index.js",
@@ -10,7 +10,6 @@
   "author": "@vitorsalgado",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
     "hapi": "^18.1.0",
     "hapi-swaggered": "^3.0.3",
     "hapi-swaggered-ui": "^3.0.2",

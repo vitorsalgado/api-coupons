@@ -3,10 +3,10 @@
 const Hapi = require('hapi')
 const Inert = require('inert')
 const Vision = require('vision')
-const Coupons = require('./coupons')
-const CouponsSchema = require('./coupons.schema')
-const Swagger = require('./swagger')
-const SwaggerUi = require('./swagger-ui')
+const Coupons = require('./src/coupons')
+const CouponsSchema = require('./src/coupons.schema')
+const Swagger = require('./src/swagger')
+const SwaggerUi = require('./src/swagger-ui')
 
 const Port = process.env.PORT || 3000
 const Server = Hapi.server({ compression: false, port: Port, host: '0.0.0.0' })
@@ -39,5 +39,5 @@ Server
     .register([Inert, Vision, Swagger, SwaggerUi])
     .then(() =>
         Server.start()
-            .then(() => console.log(`coupons API is online on port: ${Port}`))
+            .then(() => console.log(`Coupons API is online on port: ${Port}`))
             .catch(console.error))
